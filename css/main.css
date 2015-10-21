@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+
+html {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2e4453;
+}
+
+h1 {
+  font-family: 'Megrim', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+}
+
+.mountain {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+#white_mountain {
+  left: 0;
+  max-width: 600px;
+}
+
+#pink_mountain {
+  right: 0;
+  max-width: 900px;
+}
+
+#play_game {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  color: #2e4453;
+  font-family: 'Megrim', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 180px;
+  margin: 30px auto 0;
+  position: relative;
+  z-index: 99;
+}
+
+#play_game:hover {
+  box-shadow: 0 0 0 20px rgba(255,255,255,.5);
+}
+
