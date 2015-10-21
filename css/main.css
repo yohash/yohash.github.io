@@ -34,7 +34,7 @@ h1 {
   max-width: 900px;
 }
 
-#play_game {
+.play-button {
   display: block;
   text-decoration: none;
   background-color: #fff;
@@ -52,7 +52,18 @@ h1 {
   z-index: 99;
 }
 
-#play_game:hover {
+.play-button:hover {
   box-shadow: 0 0 0 20px rgba(255,255,255,.5);
 }
 
+#game_v2 {
+  font-size: 22px;
+  line-height: 31px;
+  padding-top: 60px;
+  height: 120px;
+}
+
+#game_v2 span {
+  font-size: 14px;
+  display: block;
+}
