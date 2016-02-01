@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Megrim);
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro);
 
 html {
   height: 100%;
@@ -9,13 +10,27 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2e4453;
+  font-family: 'Maven Pro', Arial, sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Megrim', cursive;
+  text-align: center;
 }
 
 h1 {
-  font-family: 'Megrim', cursive;
-  text-align: center;
   font-size: 60px;
   color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .mountain {
@@ -34,36 +49,93 @@ h1 {
   max-width: 900px;
 }
 
-.play-button {
-  display: block;
-  text-decoration: none;
-  background-color: #fff;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  color: #2e4453;
-  font-family: 'Megrim', cursive;
-  font-size: 30px;
-  font-weight: bold;
+#main_buttons_wrapper {
   text-align: center;
-  line-height: 180px;
-  margin: 30px auto 0;
   position: relative;
-  z-index: 99;
+  z-index: 999;
 }
 
-.play-button:hover {
+.main-page-buttons {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 60px 20px;
+  font-family: 'Megrim', cursive;
+  font-size: 22px;
+  text-decoration: none;
+  color: #2e4453;
+  width: 140px;
+  height: 60px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.main-page-buttons:first-child {
+  margin-right: 30px;
+}
+
+.main-page-buttons:last-child {
+  margin-left: 30px;
+}
+
+.main-page-buttons:hover {
   box-shadow: 0 0 0 20px rgba(255,255,255,.5);
 }
 
-#game_v2 {
-  font-size: 22px;
-  line-height: 31px;
-  padding-top: 60px;
-  height: 120px;
+/*Games page*/
+
+.games-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#game_v2 span {
-  font-size: 14px;
+.games-list li {
   display: block;
+  float: left;
+  width: 44%;
+  padding: 3em 3%;
+  text-align: center;
 }
+
+.games-list li h2 {
+  margin-top: 0;
+  font-size: 2.2em;
+}
+
+.games-list li:nth-child(1),
+.games-list li:nth-child(4) {
+  background-color: #fff;
+  color: #2e4453;
+}
+
+.games-list li:nth-child(1) a,
+.games-list li:nth-child(4) a {
+  color: #2e4453;
+}
+
+.games-list li:nth-child(2),
+.games-list li:nth-child(3) {
+  background-color: #59839e;
+  color: #fff;
+}
+
+.games-list li:nth-child(2) a,
+.games-list li:nth-child(3) a {
+  color: #fff;
+}
+
+.games-list li img {
+  display: inline-block;
+  width: 40%;
+}
+
+.game-description {
+  display: inline-block;
+  padding-bottom: 2em;
+}
+
+.image-links {
+  text-decoration: none;
+}
+
