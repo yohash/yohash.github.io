@@ -14,7 +14,7 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Megrim', cursive;
+  font-family: 'Megrim', 'Times', cursive;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ h1 {
   background-color: #fff;
   border-radius: 50%;
   padding: 60px 20px;
-  font-family: 'Megrim', cursive;
+  font-family: 'Megrim', 'Times', cursive;
   font-size: 22px;
   text-decoration: none;
   color: #2e4453;
@@ -95,12 +95,12 @@ h1 {
   float: left;
   width: 44%;
   padding: 3em 3%;
-  text-align: center;
 }
 
 .games-list li h2 {
   margin-top: 0;
   font-size: 2.2em;
+  text-align: center;
 }
 
 .games-list li:nth-child(1),
@@ -131,11 +131,33 @@ h1 {
 }
 
 .game-description {
-  display: inline-block;
   padding-bottom: 2em;
 }
 
 .image-links {
   text-decoration: none;
+  text-align: center;
 }
 
+.games-list li a.downloadlink {
+  color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    border-left: 0px solid #000;
+    border-right: 0px solid #000;
+}
+
+th, td {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+}
+
+th {
+  background-color: #59839e;
+  color: white;
+  text-align: center;
+}
