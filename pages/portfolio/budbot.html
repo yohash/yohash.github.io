@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>BudBot</title>
+    <meta name="description" content="BudBot portfolio">
+    <meta name="author" content="Jason Heebl">
+    <link rel="stylesheet" href="../../css/main.css">
+    <style>
+      .gallery {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1em 2em 3em;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .gallery figure {
+        margin: 0;
+        text-align: center;
+      }
+      .gallery img {
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+      }
+      .gallery figcaption {
+        color: #fff;
+        padding: 0.4em 0;
+        font-size: 1.42em;
+        text-align: left;
+      }
+      .description {
+        color: #fff;
+        text-align: left;
+        max-width: 720px;
+        margin: 0 auto;
+        font-size: 1.4em;
+      }
+      .sub-description {
+        color: #fff;
+        text-align: left;
+        max-width: 720px;
+        margin: 0 auto;
+        font-size: 1.0em;
+      }
+    </style>
+  </head>
+  <body class="page">
+    <nav>
+      <a href="../../index.html" class="nav-link"><span>&#8668;</span>&nbsp;Home</a>
+    </nav>
+    <header>
+      <h1>BudBot</h1>
+      <p class="description">BudBot is an AI-powered desktop assistant built with Azure OpenAI and Microsoft Semantic Kernel.</p>
+      <br>
+      <p class="sub-description">BudBot featured customizable personas, drag-and-drop document context, OCR for PDFs, local and cloud-based RAG via Azure AI Search, conversation history, and Microsoft Graph integration for email, calendar, and task management.</p>
+      <br>
+      <p class="sub-description">BudBot was written in mid-2024. During this time, integrations were very new. We were pre-MCP! New and experimental interfaces with Semantic Kernel were available for rudimentary web-search and MS Graph integration. Azure AI Search allowed for a stored repository of titles in a ready-to-go RAG database. It also allowed for the option to perform RAG on a local vector database. A local database is created by using Azure OpenAI Text Embedding on chosen documentation. Context windows were a challenge, and RAG was nice to have but with a few glaring issues. I am excited to see where the next-stage of context window optimization with RLM takes us!</p>      
+    </header>
+    <div class="gallery">
+      <figure>
+        <figcaption>Splash page for BudBot</figcaption>
+        <a href="budbot/1.png"><img src="budbot/1.png" alt="BudBot 1"></a>
+      </figure>
+      <figure>
+        <figcaption>Create and set a persona</figcaption>
+        <a href="budbot/3.png"><img src="budbot/3.png" alt="BudBot 3"></a>
+      </figure>
+      <figure>
+        <figcaption>Drag+drop documents to provide context to a prompt and start a conversation</figcaption>
+        <a href="budbot/7.png"><img src="budbot/7.png" alt="BudBot 7"></a>
+      </figure>
+      <figure>
+        <figcaption>OCR operates on PDFs to extract un-scanned text</figcaption>
+        <a href="budbot/8.png"><img src="budbot/8.png" alt="BudBot 8"></a>
+      </figure>
+      <figure>
+        <figcaption>Store, retrieve, and resume previous converstions</figcaption>
+        <a href="budbot/11_a.png"><img src="budbot/11_a.png" alt="BudBot 11a"></a>
+      </figure>
+      <figure>
+        <figcaption>Data Packs were what we called the available documents (cloud and local) for RAG powered-by Azure AI Search. (left) Shared documents were in a common Azure repository; anyone with BudBot could add these common documentations. (right) Local data packs are stored in a vector database on your local machine, suitable for secure documents.</figcaption>
+        <a href="budbot/13.png"><img src="budbot/13.png" alt="BudBot 13"></a>
+      </figure>
+      <figure>
+        <figcaption>To create a local vector database, drag+drop your documents into the interface. Documents would undergo Azure Text Embedding, and the database would store locally.</figcaption>
+        <a href="budbot/15.png"><img src="budbot/15.png" alt="BudBot 15"></a>
+      </figure>
+      <figure>
+        <figcaption>Large documents can be vectorized for Azure AI Search.</figcaption>
+        <a href="budbot/20.png"><img src="budbot/20.png" alt="BudBot 20"></a>
+      </figure>
+      <figure>
+        <figcaption>The new Data Pack is complete, and can be check-box added to the context for your next chat.</figcaption>
+        <a href="budbot/21.png"><img src="budbot/21.png" alt="BudBot 21"></a>
+      </figure>
+      <figure>
+        <figcaption>Data Packs could be exported and shared with colleagues.</figcaption>
+        <a href="budbot/22.png"><img src="budbot/22.png" alt="BudBot 22"></a>
+      </figure>
+      <figure>
+        <figcaption>BudBot was given a very early form of Micrsoft Semantic Kernel web integrations with Bing search.</figcaption>
+        <a href="budbot/30.png"><img src="budbot/30.png" alt="BudBot 30"></a>
+      </figure>
+      <figure>
+        <figcaption>The Micrsoft Graph integration allowed email, calendar, and task list access.</figcaption>
+        <a href="budbot/31.png"><img src="budbot/31.png" alt="BudBot 31"></a>
+      </figure>
+      <figure>
+        <figcaption>Budbot can read and make changes to your calendar.</figcaption>
+        <a href="budbot/34.png"><img src="budbot/34.png" alt="BudBot 34"></a>
+      </figure>
+    </div>
+  </body>
+</html>
